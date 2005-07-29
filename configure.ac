@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT([encodings], [7.0], [xorg@lists.freedesktop.org])
+AC_INIT([encodings], [0.99.0], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg])
 AM_INIT_AUTOMAKE([foreign dist-bzip2])
 
 # mkfontscale
@@ -17,5 +17,7 @@ AC_PATH_PROG(GZIP, gzip)
 if [[ -z $GZIP ]]; then
    AC_MSG_ERROR([gzip is needed to compress font encodings])
 fi
+
+XORG_RELEASE_VERSION
 
 AC_OUTPUT([Makefile large/Makefile])
