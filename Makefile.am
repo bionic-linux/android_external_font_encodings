@@ -40,9 +40,11 @@ ENCODING_FILES =		\
 
 EXTRA_DIST = $(ENCODING_FILES)
 
-COMPRESSED = $(foreach FILE, $(ENCODING_FILES), $(FILE).gz)
+COMPRESSED = $(ENCODING_FILES:%=%.gz)
 
-$(COMPRESSED): %.enc.gz: %.enc
+SUFFIXES = .enc .enc.gz
+
+.enc.enc.gz:
 	@GZIP@ -c < $< > $@
 
 encodings.dir:
