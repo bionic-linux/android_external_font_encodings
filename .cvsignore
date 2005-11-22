@@ -1,0 +1,11 @@
+Makefile
+Makefile.in
+*.enc.gz
+aclocal.m4
+autom4te.cache
+config.log
+config.status
+configure
+encodings.dir
+install-sh
+missing
