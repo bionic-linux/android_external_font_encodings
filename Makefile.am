@@ -1,6 +1,6 @@
 SUBDIRS = large
 
-encodingsdir = $(libdir)/X11/fonts/encodings
+encodingsdir = @ENCODINGSDIR@
 
 ENCODING_FILES =		\
 	adobe-dingbats.enc	\

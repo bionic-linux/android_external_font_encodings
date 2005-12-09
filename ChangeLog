@@ -1,0 +1,6 @@
+2005-12-09  Kevin E. Martin  <kem-at-freedesktop-dot-org>
+
+	* Makefile.am:
+	* configure.ac:
+	* large/Makefile.am:
+	Bug #5292: Make encodingsdir configurable (Donnie Berkholz).

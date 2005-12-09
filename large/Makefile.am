@@ -1,4 +1,4 @@
-encodingsdir = $(libdir)/X11/fonts/encodings/large
+encodingsdir = @ENCODINGSDIR@/large
 
 ENCODING_FILES =		\
 	big5.eten-0.enc		\
