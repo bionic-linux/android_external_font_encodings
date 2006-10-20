@@ -6,9 +6,7 @@ AM_INIT_AUTOMAKE([foreign dist-bzip2])
 
 AC_PATH_PROG(MKFONTSCALE, mkfontscale)
 if [[ -z $MKFONTSCALE ]]; then
-   AC_MSG_ERROR([mkfontscale is needed to build fontenc. FIXME: when we
-		 know where it is going to live, put a more informative
-		 comment here])
+   AC_MSG_ERROR([mkfontscale is needed to build fontenc. Please install the app/mkfontscale package from X.Org.])
 fi
 
 # gzip
