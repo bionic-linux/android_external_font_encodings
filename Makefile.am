@@ -38,7 +38,7 @@ ENCODING_FILES =		\
 	tis620-2.enc		\
 	viscii1.1-1.enc
 
-EXTRA_DIST = $(ENCODING_FILES)
+EXTRA_DIST = $(ENCODING_FILES) ChangeLog
 
 COMPRESSED = $(ENCODING_FILES:%=%.gz)
 
@@ -52,3 +52,11 @@ encodings.dir:
 
 encodings_DATA = $(COMPRESSED) encodings.dir
 CLEANFILES = $(COMPRESSED) encodings.dir
+
+MAINTAINERCLEANFILES=ChangeLog
+
+ChangeLog:
+	git-log > ChangeLog
+
+dist-hook: ChangeLog
+
