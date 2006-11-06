@@ -6,7 +6,6 @@ ENCODING_FILES =		\
 	adobe-dingbats.enc	\
 	adobe-standard.enc	\
 	adobe-symbol.enc	\
-	ansi-1251.enc		\
 	armscii-8.enc		\
 	ascii-0.enc		\
 	dec-special.enc		\
