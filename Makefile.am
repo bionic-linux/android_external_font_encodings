@@ -62,6 +62,8 @@ encodings_DATA = $(DATA_FILES) encodings.dir
 
 MAINTAINERCLEANFILES=ChangeLog
 
+.PHONY: ChangeLog
+
 ChangeLog:
 	git-log > ChangeLog
 
