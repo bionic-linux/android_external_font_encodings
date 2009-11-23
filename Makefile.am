@@ -39,6 +39,8 @@ ENCODING_FILES =		\
 
 EXTRA_DIST = $(ENCODING_FILES) ChangeLog
 
+MAINTAINERCLEANFILES = ChangeLog INSTALL
+
 COMPRESSED = $(ENCODING_FILES:%=%.gz)
 
 CLEANFILES = encodings.dir
@@ -59,8 +61,6 @@ encodings.dir: $(DATA_FILES)
 	$(AM_V_GEN)$(MKFONTSCALE) -b -s -l -n -r -p $(encodingsdir) -e . -e large .
 
 encodings_DATA = $(DATA_FILES) encodings.dir
-
-MAINTAINERCLEANFILES=ChangeLog
 
 .PHONY: ChangeLog
 
