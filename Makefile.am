@@ -62,10 +62,12 @@ encodings.dir: $(DATA_FILES)
 
 encodings_DATA = $(DATA_FILES) encodings.dir
 
-.PHONY: ChangeLog
+.PHONY: ChangeLog INSTALL
+
+INSTALL:
+	$(INSTALL_CMD)
 
 ChangeLog:
 	$(CHANGELOG_CMD)
 
-dist-hook: ChangeLog
-
+dist-hook: ChangeLog INSTALL
