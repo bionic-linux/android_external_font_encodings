@@ -49,4 +49,5 @@ fi
 
 XORG_FONTSUBDIR([ENCODINGSDIR], [encodingsdir], [encodings])
 
-AC_OUTPUT([Makefile large/Makefile])
+AC_CONFIG_FILES([Makefile large/Makefile])
+AC_OUTPUT
