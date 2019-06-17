@@ -1,5 +1,5 @@
 AC_PREREQ([2.60])
-AC_INIT([encodings], [1.0.4],
+AC_INIT([encodings], [1.0.5],
         [https://gitlab.freedesktop.org/xorg/font/encodings/issues])
 AM_INIT_AUTOMAKE([foreign dist-bzip2])
 
