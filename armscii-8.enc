@@ -2,8 +2,7 @@ STARTENCODING armscii-8
 # Armenian character set
 STARTMAPPING unicode
 0xA0	0x00A0  # NO-BREAK SPACE
-# <armeternity> doesn't exist in unicode.
-0xA1	0xFFA1  # Armenian Eternity Sign
+0xA1	0x058E  # LEFT-FACING ARMENIAN ETERNITY SIGN
 # <armew> doesn't exist in ArmSCII-8
 0xFF	0x0587	# ARMENIAN SMALL LIGATURE ECH YIWN
 0xA2	0x00A7  # SECTION SIGN
