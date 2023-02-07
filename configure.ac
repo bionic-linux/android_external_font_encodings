@@ -23,7 +23,7 @@ XORG_FONT_REQUIRED_PROG(MKFONTSCALE, mkfontscale)
 
 AC_MSG_CHECKING([if small encodings should be compressed])
 AC_ARG_ENABLE(gzip-small-encodings,
-	AC_HELP_STRING([--disable-gzip-small-encodings],
+	AS_HELP_STRING([--disable-gzip-small-encodings],
 			[Disable compression of small encoding files]),
 	[GZIP_SMALL="$enableval"], [GZIP_SMALL="yes"]) 
 AM_CONDITIONAL(GZIP_SMALL, [test x$GZIP_SMALL = xyes])
@@ -31,7 +31,7 @@ AC_MSG_RESULT([${GZIP_SMALL}])
 
 AC_MSG_CHECKING([if large encodings should be compressed])
 AC_ARG_ENABLE(gzip-large-encodings,
-	AC_HELP_STRING([--disable-gzip-large-encodings],
+	AS_HELP_STRING([--disable-gzip-large-encodings],
 			[Disable compression of large encoding files]),
 	[GZIP_LARGE="$enableval"], [GZIP_LARGE="yes"]) 
 AM_CONDITIONAL(GZIP_LARGE, [test x$GZIP_LARGE = xyes])
