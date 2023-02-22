@@ -42,6 +42,8 @@ if test x$GZIP_SMALL = xyes -o x$GZIP_LARGE = xyes ; then
     if [[ -z $GZIP ]]; then
 	AC_MSG_ERROR([gzip is needed to compress font encodings])
     fi
+    COMPRESS_FLAGS="${COMPRESS_FLAGS--n}"
+    AC_SUBST([COMPRESS_FLAGS])
 fi
 
 XORG_FONTSUBDIR([ENCODINGSDIR], [encodingsdir], [encodings])
