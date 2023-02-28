@@ -1,6 +1,6 @@
 AC_PREREQ([2.60])
-AC_INIT([encodings], [1.0.6],
-        [https://gitlab.freedesktop.org/xorg/font/encodings/issues])
+AC_INIT([encodings], [1.0.7],
+        [https://gitlab.freedesktop.org/xorg/font/encodings/-/issues])
 AM_INIT_AUTOMAKE([foreign dist-xz])
 
 # Require xorg-macros 1.20 or later: XORG_DEFAULT_NOCODE_OPTIONS
