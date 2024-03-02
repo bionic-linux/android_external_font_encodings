@@ -1,5 +1,5 @@
 project('encodings',
-        version: '1.0.7',
+        version: '1.1.0',
         meson_version: '>= 0.58.0',
         license: 'MIT'
 )
