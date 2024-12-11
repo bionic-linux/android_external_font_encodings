@@ -20,8 +20,8 @@ with open(os.path.join("encodings-output", "Android.bp"), "w") as out:
 	out.write("    srcs: [\n")
 	for file in files:
 		out.write(f"        \"{file}\",\n")
-	out.write("    ],\n")	
+	out.write("    ],\n")
+	out.write("    filename_from_src: true,\n")	
 	out.write("    relative_install_path: \"fonts/x11/encodings/\",\n")
 	out.write("}\n\n")
 os.system("git add encodings-output")
-sys.exit(-1)

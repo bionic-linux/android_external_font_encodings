@@ -38,6 +38,7 @@ prebuilt_usr_share {
         "iso8859-16.enc",
         "suneu-greek.enc",
     ],
+    filename_from_src: true,
     relative_install_path: "fonts/x11/encodings/",
 }
 
